@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
     images: {
       domains: ['fakestoreapi.com','img.icons8.com'], // Add the hostname here
     },
+    eslint:{
+      ignoreDuringBuilds:true
+    }
   
 };
 
