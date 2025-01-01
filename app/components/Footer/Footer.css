@@ -1,0 +1,130 @@
+/* General footer styling */
+footer {
+    background-color: #000; /* Black background for contrast */
+    color: #fff; /* White text color */
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  footer div,
+  footer ol {
+    flex: 1; /* Distribute equal width */
+    min-width: 250px; /* Minimum width to maintain layout */
+  }
+  
+  footer div h4,
+  footer ol h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  footer div p,
+  footer ol li {
+    font-size: 14px;
+    margin: 5px 0;
+    list-style: none;
+  }
+  
+  footer div input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  footer div button {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  footer .social-links img,
+  footer .payments-imgs img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 10px 0;
+  }
+  
+  footer .currrency-usd {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  footer .currrency-usd img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Divider between rows */
+  footer hr {
+    border: 0.5px solid #444;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  /* Responsive styling for small screens */
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: flex-start;
+    }
+  
+    footer div,
+    footer ol {
+      width: 100%; /* Take full width */
+      min-width: auto;
+    }
+  
+    footer div input[type="text"] {
+      width: 100%; /* Full width for email input */
+      margin-bottom: 10px;
+    }
+  
+    footer div button {
+      width: 100%; /* Full width for button */
+    }
+  
+    footer h4 {
+      margin-top: 20px;
+    }
+  
+    footer ol {
+      padding-left: 0;
+    }
+  }
+  
+  .american-flag img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: white;
+  }
+  
+  footer{
+    display: flex;
+  }
+
+  .footer-first-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-first-row div{
+    padding: 10px;
+  }
+
+  li{
+    padding: 4px;
+  }

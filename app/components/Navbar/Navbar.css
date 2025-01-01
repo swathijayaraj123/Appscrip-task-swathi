@@ -1,0 +1,50 @@
+/* styles/global.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Icons on the right side */
+  .navbar-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  .navbar-icons img{
+    width: 2rem;
+    height: 2rem;
+  }
+  /* Logo centered in the navbar */
+  .navbar-logo {
+    text-align: center;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  /* Language selector */
+  .navbar-language select {
+    padding: 5px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+  }
+  
