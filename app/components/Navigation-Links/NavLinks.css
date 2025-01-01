@@ -1,5 +1,5 @@
 /* General navbar styles */
-.navbar {
+.navbar1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,8 @@
   .hamburger {
     display: none;
   }
-li{
+.navbar1 li{
+    color: black;
     font-weight:600;
 }
   
@@ -58,7 +59,7 @@ li{
       display: flex;
     }
 
-    .navbar{
+    .navbar1{
         justify-content: start;
     }
   }

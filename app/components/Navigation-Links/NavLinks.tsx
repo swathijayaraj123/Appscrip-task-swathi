@@ -10,7 +10,7 @@ const NavbarLinks = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar1">
       <ul className={`nav-links ${navOpen ? 'active' : ''}`} onClick={()=>setNavOpen(!navOpen)}> 
         <li>SHOP</li>
         <li>SKILLS</li>
