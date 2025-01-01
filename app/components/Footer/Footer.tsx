@@ -3,6 +3,7 @@ import React from "react";
 import "./Footer.css";
 import Link from "next/link";
 import useMediaQuery from "../MediaQueryCutomHook";
+import Image from "next/image";
 
 const Footer = () => {
   const isSmallScreen = useMediaQuery("(max-width: 768px)");
@@ -23,9 +24,11 @@ const Footer = () => {
         <h4>Currency</h4>
         <div className="currency-usd">
          <div  className="american-flag">
-         <img
+         <Image
             src="https://img.icons8.com/?size=100&id=15532&format=png&color=000000"
             alt="american flag"
+            width={20}
+          height={20}
            
           />
          </div>
@@ -146,36 +149,50 @@ const Footer = () => {
 
       <h4>FOLLOW US</h4>
       <div className="social-links">
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=32309&format=png&color=FFFFFF"
           alt="Facebook"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=8808&format=png&color=FFFFFF"
           alt="Instagram"
+          width={20}
+          height={20}
         />
       </div>
 
       <div className="payments-imgs">
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=am4ltuIYDpQ5&format=png&color=000000"
           alt="Visa"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=13610&format=png&color=000000"
           alt="MasterCard"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=13611&format=png&color=000000"
           alt="PayPal"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=13607&format=png&color=000000"
           alt="Apple Pay"
+          width={20}
+          height={20}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=Z4vrAJWLiI4D&format=png&color=000000"
           alt="Stripe"
+          width={20}
+          height={20}
         />
       </div>
     </footer>

@@ -1,43 +1,40 @@
-// components/Navbar.tsx
 import React from 'react';
-import './Navbar.css'
+import './Navbar.css';
+import Image from 'next/image'; // Ensure you import Image from Next.js
+
 const Navbar = () => {
   return (
     <nav className="navbar">
-
       {/* Logo centered */}
       <div className="navbar-logo">
         <h1>LOGO</h1>
       </div>
 
-      {/* Language Selector */}
-            {/* Icons on the left side */}
-            <div className="navbar-icons">
-        <img
+      {/* Icons on the left side */}
+      <div className="navbar-icons">
+        <Image
           src="https://img.icons8.com/?size=100&id=132&format=png&color=000000"
-          alt="Icon 1"
-          width="40"
-          height="40"
+          alt="Search icon"
+          width={30}
+          height={30}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=87&format=png&color=000000"
-          alt="Icon 2"
-          width="40"
-          height="40"
+          alt="Heart liked items"
+          width={30}
+          height={30}
         />
-        <img
+        <Image
           src="https://img.icons8.com/?size=100&id=21823&format=png&color=000000"
-          alt="Icon 3"
-          width="40"
-          height="40"
+          alt="Shopping bag"
+          width={30}
+          height={30}
         />
       </div>
 
       <div className="navbar-language">
-        <select>
-          <option value="English" selected>
-            English
-          </option>
+        <select defaultValue="English">
+          <option value="English">English</option>
           <option value="Spanish">Spanish</option>
           <option value="French">French</option>
         </select>

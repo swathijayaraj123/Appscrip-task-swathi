@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
  
     images: {
-      domains: ['fakestoreapi.com'], // Add the hostname here
+      domains: ['fakestoreapi.com','img.icons8.com'], // Add the hostname here
     },
   
 };

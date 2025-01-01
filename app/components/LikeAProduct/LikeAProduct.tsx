@@ -2,6 +2,7 @@
 import { useState  } from "react";
 import react from "react";
 import './LikeAProduct.css'
+import Image from "next/image";
 
 const LikeAProduct = () => {
   const [likeHeart, setLikeHeart] = useState(false);
@@ -13,10 +14,12 @@ const LikeAProduct = () => {
       className="like-button"
       onClick={() => setLikeHeart(!likeHeart)}
     >
-      <img
+      <Image
         src={likeHeart ? likedHeart : toLikeHeart}
         alt="Likable heart for users to save the product"
         className="heart-image"
+        width={20}
+        height={20}
       />
     </div>
   );
